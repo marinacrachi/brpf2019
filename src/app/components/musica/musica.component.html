@@ -1,0 +1,4 @@
+<div (click)="back()">
+    <img class="img-fluid" [ngClass]="{'slide-in-top':mostra, 'slide-in-bottom ':!mostra}" [src]='musicaSorteada1'>
+    <img class="img-fluid" [ngClass]="{'slide-in-top':!mostra, 'slide-in-bottom ':mostra}" [src]='musicaSorteada2'>
+</div>

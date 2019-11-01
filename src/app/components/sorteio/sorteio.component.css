@@ -1,0 +1,55 @@
+.fases {
+    padding: 0;
+    margin: -0.4%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.fase-unica {
+    background: #17a2b8;
+    padding: 1%;
+    width: 29%;
+    height: 130px;
+    margin-top: 2%;
+    line-height: 344%;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.fase-unica:hover {
+    background-color: #dc3545;
+}
+
+.listas {
+    padding: 0;
+    margin: -0.4%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.lista-unica {
+    background: #ffc107;
+    padding: 1%;
+    width: 47%;
+    height: 375px;
+    margin-top: 3%;
+    line-height: 724%;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.lista-unica:hover {
+    background-color: #dc3545;
+}

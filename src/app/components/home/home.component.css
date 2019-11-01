@@ -1,0 +1,27 @@
+.categorias {
+    padding: 0;
+    margin: -0.4%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+.categoria-unica {
+    background: #17a2b8;
+    padding: 1%;
+    width: 47%;
+    height: 375px;
+    margin-top: 3%;
+    line-height: 724%;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.categoria-unica:hover {
+    background-color: #ffc107;
+}
