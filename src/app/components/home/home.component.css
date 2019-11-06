@@ -12,8 +12,8 @@
 .categoria-unica {
     background: #17a2b8;
     padding: 1%;
-    width: 47%;
-    height: 375px;
+    width: 375px;
+    height: 372px;
     margin-top: 3%;
     line-height: 724%;
     color: white;
@@ -23,5 +23,25 @@
 }
 
 .categoria-unica:hover {
-    background-color: #ffc107;
+    opacity: 0.5;
+}
+
+.intermediario {
+    background-image: url('../../../assets/categorias/intermediario.png');
+    background-size: 375px 372px;
+}
+
+.coop {
+    background-image: url('../../../assets/categorias/coop.png');
+    background-size: 375px 372px;
+}
+
+.feminino {
+    background-image: url('../../../assets/categorias/feminino.png');
+    background-size: 375px 372px;
+}
+
+.masculino {
+    background-image: url('../../../assets/categorias/masculino.png');
+    background-size: 375px 372px;
 }

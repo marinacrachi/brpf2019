@@ -1,0 +1,111 @@
+ /* must match size of imge */
+#container {
+    /* width: 1280px;
+    height: 720px; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .puzzle {
+    background-image:url('../../../assets/categorias/intermediario/fase-1/20.png');
+     /* width: 33%; */
+     background-size: 100% 100%;
+     width: 22.1%;
+     height: 100%;
+     float: left;
+  }
+  .piece1 { background-position: 0 0; }
+  .piece2 { background-position: -100% 0; }
+  .piece3 { background-position: -50% 0 }
+  
+  .peca-1-container{
+      position:absolute;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width:33%;
+      overflow: hidden;
+  }
+  .peca-2-container{
+    position:absolute;
+    top: 0%;
+    left: 33%;
+    height: 100%;
+    width:33%;
+    overflow: hidden;
+}
+
+.peca-3-container{
+  position:absolute;
+  top: 0%;
+  left: 66%;
+  height: 100%;
+  width:33%;
+  overflow: hidden;
+}
+  .img{       
+    background-size: 100% 100%;
+    height: 100%;
+    width: 300%;
+    position: absolute;    
+  }
+
+  .img-1{
+    
+  }
+  .img-2{
+    left: -100%;      
+}
+.img-3{
+    left: -200%;      
+}
+.musica{
+    opacity:0;
+}
+.musica.sai{
+    opacity:1;
+}
+.container-principal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mostra{
+    opacity: 1;
+    
+}
+.mostra .peca-1-container{
+    animation: mymove 0.5s;
+    
+}
+.mostra .peca-2-container{
+    animation: mymove 0.2s;
+    
+}
+.mostra .peca-3-container{
+    animation: mymove 0.3s;
+    
+}
+
+.sai .peca-1-container{
+    animation: mymove2 0.5s;
+    
+}
+.sai .peca-2-container{
+    animation: mymove2 0.2s;
+    
+}
+.sai .peca-3-container{
+    animation: mymove2 0.3s;
+    
+}
+@keyframes mymove {
+    from {top: -100%;}
+    to {top: 0%;}
+}
+@keyframes mymove2 {
+    from {top: 0%; opacity: 1;}
+    to {top: 100%; opacity: 0;}
+}

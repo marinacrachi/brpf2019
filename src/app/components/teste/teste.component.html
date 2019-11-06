@@ -1,0 +1,24 @@
+<!-- <div id="container">
+
+    <div class="puzzle piece1"></div>
+    <div class="puzzle piece2"></div>
+    <div class="puzzle piece3"></div>
+
+    
+
+    
+
+</div>  -->
+<div class="container-principal">
+    <div *ngFor="let musica of listaDeMusicas" class="musica" [ngClass]="{'mostra':mostraImagem(musica), 'sai':saiImagem(musica)}">
+        <div class="peca-1-container">
+            <div class="img img-1" [ngStyle]="setaBg(musica)"></div>
+        </div>
+        <div class="peca-2-container">
+            <div class="img img-2" [ngStyle]="setaBg(musica)"></div>
+        </div>
+        <div class="peca-3-container">
+            <div class="img img-3" [ngStyle]="setaBg(musica)"></div>
+        </div>
+    </div>
+</div>

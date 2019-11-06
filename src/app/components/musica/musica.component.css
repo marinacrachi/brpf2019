@@ -4,6 +4,41 @@ img {
   width: 100%;
 }
 
+.puzzlegrandao{
+  position: fixed;
+  height: 100%;
+  width: 100%;;
+}
+
+.puzzle {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image:url('../../../assets/categorias/intermediario/fase-1/20.png');
+  float: left;
+}
+
+.coluna-1 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 0 0;
+}
+
+.coluna-2 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 33% 0;
+}
+
+.coluna-3 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 66% 0;
+}
+
 .slide-in-top {
 	-webkit-animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

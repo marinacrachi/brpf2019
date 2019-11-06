@@ -14,7 +14,14 @@ export class MusicaComponent implements OnInit {
   listaDeMusicas;
   musicaSorteada1 = 'assets/categorias/musica0.png';
   musicaSorteada2 = 'assets/categorias/musica0.png';
+  // musicaSorteada3 = 'assets/categorias/musica0.png';
+  // musicaSorteada4 = 'assets/categorias/musica0.png';
+  // musicaSorteada5 = 'assets/categorias/musica0.png';
+  // musicaSorteada6 = 'assets/categorias/musica0.png';
+  // musicaFinal = 'assets/categorias/musica0.png';
+  // mostraSorteio = false;
   mostra = false;
+  // style = {};
 
   constructor(private route: ActivatedRoute, private router: Router, private _location: Location) { }
 
@@ -34,11 +41,19 @@ export class MusicaComponent implements OnInit {
     var shuffleImagens = setInterval(() => {
       this.musicaSorteada1 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
       this.musicaSorteada2 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+      // this.musicaSorteada3 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+      // this.musicaSorteada4 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+      // this.musicaSorteada5 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+      // this.musicaSorteada6 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+
       this.mostra = !this.mostra;
     }, 200);
 
     setTimeout(() => {
       clearInterval(shuffleImagens);
+      // this.mostraSorteio = true;
+      // this.musicaFinal = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
+      // this.style = {'background-image': 'url(' + this.musicaFinal + ')', 'background-size': 'cover'}
     }, 10000);
   }
 
@@ -55,10 +70,10 @@ export class MusicaComponent implements OnInit {
   }
 
   playAudio(campeonato) {
-    let audio = new Audio();
-    audio.src = `assets/musicas/${campeonato}.mp3`;
-    audio.load();
-    audio.play();
+    // let audio = new Audio();
+    // audio.src = `assets/musicas/${campeonato}.mp3`;
+    // audio.load();
+    // audio.play();
   }
 
   back() {
