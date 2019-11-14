@@ -4,7 +4,7 @@ export const mock = [
         "codigo": "intermediario",
         "fases": [
             {
-                "nome": "Primeira fase",
+                "nome": "1ª fase",
                 "codigo": "fase-1",
                 "grupoDeMusicas": [
                     {
@@ -18,7 +18,7 @@ export const mock = [
                 ]
             },
             {
-                "nome": "Segunda fase",
+                "nome": "2ª fase",
                 "codigo": "fase-2",
                 "grupoDeMusicas": [
                     {
@@ -66,7 +66,7 @@ export const mock = [
         "codigo": "feminino",
         "fases": [
             {
-                "nome": "Primeira fase",
+                "nome": "1ª fase",
                 "codigo": "fase-1",
                 "grupoDeMusicas": [
                     {
@@ -80,7 +80,7 @@ export const mock = [
                 ]
             },
             {
-                "nome": "Segunda fase",
+                "nome": "2ª fase",
                 "codigo": "fase-2",
                 "grupoDeMusicas": [
                     {
@@ -128,7 +128,7 @@ export const mock = [
         "codigo": "masculino",
         "fases": [
             {
-                "nome": "Primeira fase",
+                "nome": "1ª fase",
                 "codigo": "fase-1",
                 "grupoDeMusicas": [
                     {
@@ -142,7 +142,7 @@ export const mock = [
                 ]
             },
             {
-                "nome": "Segunda fase",
+                "nome": "2ª fase",
                 "codigo": "fase-2",
                 "grupoDeMusicas": [
                     {
@@ -156,7 +156,7 @@ export const mock = [
                 ]
             },
 			{
-                "nome": "Terceira fase",
+                "nome": "3ª fase",
                 "codigo": "fase-3",
                 "grupoDeMusicas": [
                     {
@@ -204,7 +204,7 @@ export const mock = [
         "codigo": "coop",
         "fases": [
             {
-                "nome": "Primeira fase",
+                "nome": "1ª fase",
                 "codigo": "fase-1",
                 "grupoDeMusicas": [
                     {
@@ -218,7 +218,7 @@ export const mock = [
                 ]
             },
             {
-                "nome": "Segunda fase",
+                "nome": "2ª fase",
                 "codigo": "fase-2",
                 "grupoDeMusicas": [
                     {

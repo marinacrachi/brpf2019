@@ -1,16 +1,16 @@
-<div class="container">
-    <nav class="navbar navbar-light bg-danger">
+<div class="campeonato" [ngStyle]="setaBg()">
+    <!-- <nav class="navbar navbar-light bg-danger">
         <div class="navbar-brand text-white">
             <h1>Campeonato {{informacoesDoCampeonato.nome}}</h1>
         </div>
         <div class="nav-item text-white" (click)="back()">
             VOLTAR
         </div>
-    </nav>
+    </nav> -->
 
     <div class="fases">
         <div class="fase-unica" *ngFor="let fase of informacoesDoCampeonato.fases; let i = index">
-            <div (click)="selecionaFase(fase)">{{ fase.nome }}</div>
+            <div (click)="selecionaFase(fase)"><span>{{ fase.nome }}</span> <div class="ovelha"></div></div> 
         </div>
     </div>
 

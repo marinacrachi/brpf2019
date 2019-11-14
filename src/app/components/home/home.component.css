@@ -1,4 +1,4 @@
-.categorias {
+/* .categorias {
     padding: 0;
     margin: -0.4%;
     list-style: none;
@@ -7,41 +7,52 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: space-around;
+} */
+
+/* .categorias {
+    background-image: url('../../../assets/categorias/menu.png');
+    background-repeat: no-repeat;
+    width: 1425px;
+    height: 1425px;
+    max-width: 100%;
+    max-height: 100%;
+} */
+.categorias{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    background:url(../../../assets/categorias/menu.png);
+    height: 100%;
+    margin: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .categoria-unica {
-    background: #17a2b8;
-    padding: 1%;
-    width: 375px;
-    height: 372px;
-    margin-top: 3%;
-    line-height: 724%;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
+    width: 36.8%;
+    height: 20%;
+    position: fixed;
+    top: 12%;
+    left: 6.6%;
 }
 
 .categoria-unica:hover {
+    background-color: white;
     opacity: 0.5;
 }
 
-.intermediario {
-    background-image: url('../../../assets/categorias/intermediario.png');
-    background-size: 375px 372px;
-}
 
 .coop {
-    background-image: url('../../../assets/categorias/coop.png');
-    background-size: 375px 372px;
+    left: 56.6%;
 }
 
 .feminino {
-    background-image: url('../../../assets/categorias/feminino.png');
-    background-size: 375px 372px;
+    top: 39.5%;
 }
 
 .masculino {
-    background-image: url('../../../assets/categorias/masculino.png');
-    background-size: 375px 372px;
+    top: 39.5%;
+    left: 56.6%;
 }

@@ -16,6 +16,7 @@ export class SorteioComponent implements OnInit {
   faseAtual;
   temListaA = false;
   temListaB = false;
+  categoriaCampeonato = {}
 
   constructor(private route: ActivatedRoute, private router: Router, private _location: Location) { }
 
@@ -53,6 +54,10 @@ export class SorteioComponent implements OnInit {
 
   back() {
     this._location.back();
+  }
+
+  setaBg(){
+    return { 'background-image': `url(assets/categorias/menu-${this.codigoDoCampeonato}.png)` }
   }
 
 }

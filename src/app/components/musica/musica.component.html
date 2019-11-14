@@ -1,21 +1,16 @@
-<!-- <div class="main row" (click)="back()" [ngStyle]="style" [ngClass]="{'mostra':mostraSorteio}"> -->
-    <!-- <div class="main row" (click)="back()" [ngStyle]="{'background-image': 'url(' + musicaFinal + ')'}"  [ngClass]="{'mostra':mostraSorteio}"> -->
-    <!-- <div class="col-sm" [ngClass]="{'esconde':mostraSorteio}">
-        <img class="img-fluid" [ngClass]="{'slide-in-top':mostra, 'slide-in-bottom ':!mostra}" [src]='musicaSorteada1'>
-        <img class="img-fluid" [ngClass]="{'slide-in-top':!mostra, 'slide-in-bottom ':mostra}" [src]='musicaSorteada2'>
+<div class="container-principal" (click)="back()">
+    <div *ngFor="let musica of listaDeMusicas" class="musica"
+        [ngClass]="{'mostra':mostraImagem(musica), 'sai':saiImagem(musica)}">
+        <div class="peca-1-container">
+            <div class="img img-1" [ngStyle]="setaBg(musica)"></div>
+        </div>
+        <div class="peca-2-container">
+            <div class="img img-2" [ngStyle]="setaBg(musica)"></div>
+        </div>
+        <div class="peca-3-container">
+            <div class="img img-3" [ngStyle]="setaBg(musica)"></div>
+        </div>
     </div>
-    <div class="col-sm" [ngClass]="{'esconde':mostraSorteio}">
-        <img class="img-fluid" [ngClass]="{'slide-in-top':mostra, 'slide-in-bottom ':!mostra}" [src]='musicaSorteada3'>
-        <img class="img-fluid" [ngClass]="{'slide-in-top':!mostra, 'slide-in-bottom ':mostra}" [src]='musicaSorteada4'>
-    </div>
-    <div class="col-sm" [ngClass]="{'esconde':mostraSorteio}">
-        <img class="img-fluid" [ngClass]="{'slide-in-top':mostra, 'slide-in-bottom ':!mostra}" [src]='musicaSorteada5'>
-        <img class="img-fluid" [ngClass]="{'slide-in-top':!mostra, 'slide-in-bottom ':mostra}" [src]='musicaSorteada6'>
-    </div>
-</div> -->
-
-
-<div (click)="back()">
-    <img class="img-fluid" [ngClass]="{'slide-in-top':mostra, 'slide-in-bottom ':!mostra}" [src]='musicaSorteada1'>
-    <img class="img-fluid" [ngClass]="{'slide-in-top':!mostra, 'slide-in-bottom ':mostra}" [src]='musicaSorteada2'>
+</div>
+<div>
 </div>

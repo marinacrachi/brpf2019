@@ -1,85 +1,97 @@
-img {
-  position: fixed;
+.peca-1-container{
+  position:absolute;
+  top: 0%;
+  left: 0%;
   height: 100%;
-  width: 100%;
+  width:33%;
+  overflow: hidden;
 }
-
-.puzzlegrandao{
-  position: fixed;
+.peca-2-container{
+  position:absolute;
+  top: 0%;
+  left: 33%;
   height: 100%;
-  width: 100%;;
+  width:33%;
+  overflow: hidden;
 }
 
-.puzzle {
-  position: fixed;
+.peca-3-container{
+  position:absolute;
+  top: 0%;
+  left: 66%;
   height: 100%;
-  width: 100%;
-  background-image:url('../../../assets/categorias/intermediario/fase-1/20.png');
-  float: left;
+  width:33%;
+  overflow: hidden;
 }
 
-.coluna-1 {
-  position: fixed;
+.img{       
+  background-size: 100% 100%;
   height: 100%;
-  width: 100%;
-  background-position: 0 0;
+  width: 300%;
+  position: absolute;    
 }
 
-.coluna-2 {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-position: 33% 0;
-}
-
-.coluna-3 {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-position: 66% 0;
-}
-
-.slide-in-top {
-	-webkit-animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.slide-in-bottom {
-	animation: slide-in-bottom 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-}
-
- @-webkit-keyframes slide-in-top {
-    0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-top {
-    0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.img-1{
   
-  @keyframes slide-in-bottom {
-    0% {
-      transform: translateY(1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+}
+
+.img-2{
+  left: -100%;      
+}
+
+.img-3{
+  left: -200%;      
+}
+
+.musica{
+  opacity:0;
+}
+
+.musica.sai{
+  opacity:1;
+}
+
+.container-principal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mostra{
+  opacity: 1;  
+}
+
+.mostra .peca-1-container{
+  animation: mymove 0.5s;
+}
+
+.mostra .peca-2-container{
+  animation: mymove 0.2s;
+}
+
+.mostra .peca-3-container{
+  animation: mymove 0.3s;  
+}
+
+.sai .peca-1-container{
+  animation: mymove2 0.5s;  
+}
+
+.sai .peca-2-container{
+  animation: mymove2 0.2s;  
+}
+
+.sai .peca-3-container{
+  animation: mymove2 0.3s;  
+}
+
+@keyframes mymove {
+  from {top: -100%;}
+  to {top: 0%;}
+}
+
+@keyframes mymove2 {
+  from {top: 0%; opacity: 1;}
+  to {top: 100%; opacity: 0;}
+}

@@ -11,16 +11,16 @@ export class TesteComponent implements OnInit {
   campeonato;
   faseAtual;
   listaDeMusicas;
-  musicaSorteada1 = 'assets/categorias/musica0.png';
-  musicaSorteada2 = 'assets/categorias/musica0.png';
-  musicaSorteada3 = 'assets/categorias/musica0.png';
-  musicaSorteada4 = 'assets/categorias/musica0.png';
-  musicaSorteada5 = 'assets/categorias/musica0.png';
-  musicaSorteada6 = 'assets/categorias/musica0.png';
-  musicaFinal = 'assets/categorias/musica0.png';
-  mostraSorteio = false;
-  mostra = false;
-  style = {};
+  // musicaSorteada1 = 'assets/categorias/musica0.png';
+  // musicaSorteada2 = 'assets/categorias/musica0.png';
+  // musicaSorteada3 = 'assets/categorias/musica0.png';
+  // musicaSorteada4 = 'assets/categorias/musica0.png';
+  // musicaSorteada5 = 'assets/categorias/musica0.png';
+  // musicaSorteada6 = 'assets/categorias/musica0.png';
+  // musicaFinal = 'assets/categorias/musica0.png';
+  // mostraSorteio = false;
+  // mostra = false;
+  // style = {};
   musicaAtual = 0;
   musicaAnterior;
   constructor(private route: ActivatedRoute, private router: Router, private _location: Location) { }
@@ -29,16 +29,16 @@ export class TesteComponent implements OnInit {
     this.route.params.subscribe(paramsId => {
       this.campeonato = JSON.parse(paramsId.campeonato)
       this.faseAtual = JSON.parse(paramsId.faseAtual)
-
+      this.listaDeMusicas = paramsId.listaDeMusicas
     })
 
-    this.listaDeMusicas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-    // if (this.faseAtual.codigo == 'final') {
-    //   this.playAudio(this.campeonato.codigo)
-    // } else {
-    //   this.playAudio('normal2')
-    // }
+    if (this.faseAtual.codigo == 'final') {
+      this.playAudio(this.campeonato.codigo)
+    } else {
+      this.playAudio('normal2')
+    }
+
     let pos = 0;
     var shuffleImagens = setInterval(() => {
       // this.musicaSorteada1 = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
@@ -58,12 +58,14 @@ export class TesteComponent implements OnInit {
         this.musicaAnterior = this.listaDeMusicas[this.listaDeMusicas.length - 1];
       }
       pos++;
-      console.log(this.getRandomIntInclusive(1, 15))
+      // console.log(this.getRandomIntInclusive(1, 15))
     }, 100);
     
     setTimeout(() => {
       clearInterval(shuffleImagens);
-      this.musicaAtual=this.getRandomIntInclusive(1, 15);
+      let min = this.faseAtual.grupoDeMusicas[this.listaDeMusicas].musicas[0]
+      let max = this.faseAtual.grupoDeMusicas[this.listaDeMusicas].musicas[this.faseAtual.grupoDeMusicas[this.listaDeMusicas].musicas.length - 1]
+      this.musicaAtual = this.getRandomIntInclusive(min, max);
       // this.mostraSorteio = true;
       // this.musicaFinal = `assets/categorias/${this.campeonato.codigo}/${this.faseAtual.codigo}/${this.sorteiaMusica()}.png`
       // this.style = {'background-image': 'url(' + this.musicaFinal + ')', 'background-size': 'cover'}
@@ -92,14 +94,13 @@ export class TesteComponent implements OnInit {
   }
 
   playAudio(campeonato) {
-    // let audio = new Audio();
-    // audio.src = `assets/musicas/${campeonato}.mp3`;
-    // audio.load();
-    // audio.play();
+    let audio = new Audio();
+    audio.src = `assets/musicas/${campeonato}.mp3`;
+    audio.load();
+    audio.play();
   }
 
   back() {
     this._location.back();
   }
 }
-

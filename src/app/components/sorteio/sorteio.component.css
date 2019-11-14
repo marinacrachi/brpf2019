@@ -1,55 +1,92 @@
+.campeonato {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .fases {
-    padding: 0;
-    margin: -0.4%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
+    display: block;
+    margin-top: 18%;
 }
 
 .fase-unica {
-    background: #17a2b8;
-    padding: 1%;
-    width: 29%;
-    height: 130px;
-    margin-top: 2%;
-    line-height: 344%;
+    /* text-align: left;
+    padding: 0%;
+    width: 48%;
+    margin-top: 0%;
+    line-height: 264%;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;    
+    margin-left: 50%; */
+    text-align: left;
+    padding: 0%;
+    width: 33%;
+    margin-top: 0%;
+    line-height: 264%;
     color: white;
     font-weight: bold;
     font-size: 2em;
-    text-align: center;
+    margin-left: 58%;
 }
 
 .fase-unica:hover {
-    background-color: #dc3545;
+    color: black;
+    opacity: 0.5;
 }
 
 .listas {
-    padding: 0;
-    margin: -0.4%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-around;
+    display: block;
+    margin-top: 5%;
 }
 
 .lista-unica {
-    background: #ffc107;
-    padding: 1%;
-    width: 47%;
-    height: 375px;
-    margin-top: 3%;
-    line-height: 724%;
-    color: white;
+    padding: 0%;
+    width: 30%;
+    margin-top: 0%;
+    line-height: 216%;
+    color: black;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+    margin-left: 60%;
 }
 
 .lista-unica:hover {
-    background-color: #dc3545;
+    color: black;
+    opacity: 0.5;
+}
+
+.ovelha {
+    width: 18%;
+    float: right;       
+    animation: sheepAnimation 0.5s infinite;    
+    height: 80px;
+    position: relative;
+}
+
+@keyframes sheepAnimation {    
+    0% {
+        background: url(../../../assets/categorias/ovelhinhas/S04.PNG);
+        background-size: 100% 100%;
+    }
+    25%  {
+        background: url(../../../assets/categorias/ovelhinhas/S01.PNG);
+        background-size: 100% 100%;
+    }
+    50%  {background: url(../../../assets/categorias/ovelhinhas/S02.PNG);
+        background-size: 100% 100%;
+    }
+    75%  {background: url(../../../assets/categorias/ovelhinhas/S03.PNG);
+        background-size: 100% 100%;
+    }
+    100% {background: url(../../../assets/categorias/ovelhinhas/S04.PNG);
+        background-size: 100% 100%;
+    }
 }
